@@ -1,0 +1,195 @@
+/*****************************
+ *       BASE
+ *****************************/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/*****************************
+ *       BASE
+ *****************************/
+:root {
+  --color-primary: #0041aa;
+  --color-primary-light: #004fd1;
+  --color-secondary: #ff9030;
+}
+
+
+/*****************************
+ *       LAYOUT
+ *****************************/
+.layout-main {
+  min-height: 100vh;
+  display: grid;
+  grid-template: "header" auto
+                 "nav" auto
+                 "content" 1fr
+                 "footer" auto;
+}
+
+.layout-main--header {
+  grid-area: header;
+}
+
+.layout-main--nav {
+  grid-area: nav;
+}
+
+.layout-main--content {
+  grid-area: content;
+  padding: 20px;
+}
+
+.layout-main--footer {
+  grid-area: footer;
+}
+
+
+.layout-subgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.layout-subgrid--item {
+
+}
+
+/*****************************
+ *       HEADER
+ *****************************/
+
+.mountain-header {
+  min-height: 400px;
+  background: url("/assets/bicycle-logo.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.mountain-header--title {
+  color: white;
+  font-size: 5em;
+  color: var(--color-secondary);
+  margin: 20px;
+
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+/*****************************
+ *       NAV
+ *****************************/
+.mountain-nav {
+  background: #b9b9b9;
+}
+
+.mountain-nav--list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 2px solid black;
+}
+
+.mountain-nav--item {
+  flex: 1;
+  background: var(--color-primary);
+  text-align: center;
+  border-right: 2px solid black;
+}
+
+.mountain-nav--item:hover {
+  background: var(--color-primary-light);
+}
+
+.mountain-nav--item:last-child {
+  border: none;
+}
+
+.mountain-nav--link {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.mountain-nav--expand {
+  display: none;
+}
+
+ul.mountain-nav--show {
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .mountain-nav--list {
+    flex-direction: column;
+    display: none;
+  }
+
+  .mountain-nav--item {
+    border: none;
+    text-align: left;
+  }
+
+  .mountain-nav--expand {
+    display: inline-block;
+    border: 3px solid black;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .mountain-nav--expandLine {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 3px;
+  }
+}
+
+/*****************************
+ *       FOOTER
+ *****************************/
+.mountain-footer {
+  background: var(--color-secondary);
+  color: white;
+  padding: 10px 20px;
+}
+
+.mountain-footer--info {
+  margin: 10px;
+}
+
+
+/*****************************
+ *       MAIN
+ *****************************/
+.mountain-main {}
+
+
+/*****************************
+ *       ARTICLE
+ *****************************/
+.mountain-article {
+  padding: 10px;
+  display: inline-block;
+}
+
+.mountain-article--title {}
+
+.mountain-article--img {
+  width: 100%;
+}
+
+.mountain-article--description {}

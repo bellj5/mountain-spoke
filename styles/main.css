@@ -109,7 +109,10 @@ html, body {
   color: var(--color-secondary);
   margin: 20px;
 
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-shadow:  -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
 }
 
 @media screen and (max-width: 992px) {
@@ -118,6 +121,12 @@ html, body {
   }
 }
 
+/*****************************
+ *       NAV
+ *****************************/
+.mountain-logo {
+  width: 200px;
+}
 
 /*****************************
  *       NAV

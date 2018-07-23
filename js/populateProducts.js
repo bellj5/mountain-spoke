@@ -84,7 +84,7 @@ request.onload = function() {
 
     //Create and append image
     let img = document.createElement('img');
-    img.setAttribute('src', '/assets/' + product.img);
+    img.setAttribute('src', 'https://bellj5.github.io/mountain-spoke/assets/' + product.img);
     img.style.width = "30%";
 
     //Create and append description

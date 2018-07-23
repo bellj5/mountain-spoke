@@ -1,5 +1,5 @@
 let request = new XMLHttpRequest();
-let requestUrl = 'http://localhost:3000/data/products.json';
+let requestUrl = 'https://bellj5.github.io/mountain-spoke/data/products.json';
 
 request.open('GET', requestUrl);
 request.responseType = 'json';

@@ -95,7 +95,7 @@ html, body {
 
 .mountain-header {
   min-height: 400px;
-  background: url("/assets/bicycle-logo.jpg") no-repeat;
+  background: url("https://bellj5.github.io/mountain-spoke/assets/bicycle-logo.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 

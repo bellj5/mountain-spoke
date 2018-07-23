@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This is the Mountain Spoke website.">
 
-  <script
-  			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   			  crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9oF0s6q2mORXIENxz2db5gU1C7Iwn76Y"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.googlemap/1.5/jquery.googlemap.min.js"></script>
   <title>Bicycle Store - Repairs and Tours | The Mountain Spoke</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 </head>
 
 <body>
@@ -20,13 +22,65 @@
     </header>
     <nav class="layout-main--nav mountain-nav" id="nav"></nav>
     <main class="layout-main--content mountain-main">
-      <h1>Welcome!</h1>
+      <h1>Contact Us!</h1>
       <section class="layout-subgrid">
-
+        <div id="map" class="mountain-map"></div>
+        <p>
+          Come in and talk with us! Our shop is at 3950 Valley Commons Drive Bozeman, MT.
+          We are always open for scheduled and walk-in repairs and services. If you would
+          like to contact us about tours or events, please fill out the form below to send
+          an email to our 24-hour service and we will get back to you as soon as possible!
+          <br>
+          <br>
+          <strong>Business Hours:</strong> Monday-Friday, 8:00AM - 5:00PM
+        </p>
       </section>
+      <form action="submitted.html" method="get" class="mountain-form">
+        <h2>Contact Us</h2>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="firstName">First Name:</label>
+          <input class="mountain-input--field" type="text" id="firstName" name="firstName">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="lastName">Last Name:</label>
+          <input class="mountain-input--field" type="text" id="lastName" name="lastName">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="email">Email:</label>
+          <input class="mountain-input--field" type="text" id="email" name="email">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="phone">Phone:</label>
+          <input class="mountain-input--field" type="text" id="phone" name="phone">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="state">Home State:</label>
+          <input class="mountain-input--field" type="text" id="state" name="state">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="message">Message:</label>
+          <textarea class="mountain-input--field" id="message" name="message" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
     </main>
     <footer class="layout-main--footer mountain-footer" id="footer"></footer>
   </div>
   <script src="js/loadHTML.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#map").googleMap({
+        zoom: 10,
+        coords: [45.676998, -111.042931],
+        type: "ROADMAP"
+      });
+      $('#map').addMarker({
+        address: '3950 Valley Commons Drive Bozeman, MT',
+        url: 'https://bellj5.github.io/mountain-spoke',
+        title: '3950 Valley Commons Drive Bozeman, MT',
+        text: '3950 Valley Commons Drive Bozeman, MT'
+      })
+    })
+  </script>
 </body>
 </html>

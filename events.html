@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This is the Mountain Spoke website.">
 
-  <script
-  			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   			  crossorigin="anonymous"></script>
   <title>Bicycle Store - Repairs and Tours | The Mountain Spoke</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 </head>
 
 <body>
@@ -20,10 +20,71 @@
     </header>
     <nav class="layout-main--nav mountain-nav" id="nav"></nav>
     <main class="layout-main--content mountain-main">
-      <h1>Welcome!</h1>
-      <section class="layout-subgrid">
-
+      <h1>Events</h1>
+      <section class="layout-subgrid-featured">
+        <article class="mountain-article layout-subgrid-featured--item">
+          <h2 class="mountain-article--title">Featured Event: Cycle the Continental Divide</h2>
+          <img class="mountain-article--img" src="assets/continental-divide.jpg" alt="Mountain">
+          <div class="mountain-article--description">
+            <h3>What</h3>
+            <p>
+              We are proud to announce that we are an avid sponsor of the internationally renowned
+              event: "Cycle the Continental Divide." We are calling determined cyclists everywhere
+              to join us in this extraordinary event to cycle from Alberta, Canada through British
+              Columbia, Montana, Idaho, Wyoming, Colorado, and New Mexico. By the time the event is
+              over, participants will have climbed almost 200,000 feet. This is roughly the same as
+              climbing Mount Everest from sea-level seven times!
+            </p>
+            <h3>Requirements and Dates</h3>
+            <p>
+              Cyclists that have met the requirements found at the
+              <a href="https://tourdivide.org/the_rules">Official Tour Guide</a> can sign up by June
+              10th of each year to take place in this amazing event!
+            </p>
+            <h3>Sign Up</h3>
+            <p>
+              We are excited to work with you to make this a memorable life event! Sign up below today!
+            </p>
+            <h3>Pricing</h3>
+            <p>
+              We offer packages including pre-booked lodging, travel support with our own
+              cross-country drivers, and souvenir bundles starting as low as $99!
+            </p>
+          </p>
+        </article>
       </section>
+      <form action="submitted.html" method="get" class="mountain-form">
+        <h2>Sign Up Now!</h2>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="firstName">First Name:</label>
+          <input class="mountain-input--field" type="text" id="firstName" name="firstName">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="lastName">Last Name:</label>
+          <input class="mountain-input--field" type="text" id="lastName" name="lastName">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="email">Email:</label>
+          <input class="mountain-input--field" type="text" id="email" name="email">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="phone">Phone:</label>
+          <input class="mountain-input--field" type="text" id="phone" name="phone">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="birthdate">Date of Birth:</label>
+          <input class="mountain-input--field" type="date" id="birthdate" name="birthdate">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="state">Home State:</label>
+          <input class="mountain-input--field" type="text" id="state" name="state">
+        </div>
+        <div class="mountain-input">
+          <label class="mountain-input--label" for="accommodations">Special Accommodations / Comments:</label>
+          <textarea class="mountain-input--field" type="text" id="accommodations" name="accommodations" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
     </main>
     <footer class="layout-main--footer mountain-footer" id="footer"></footer>
   </div>

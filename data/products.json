@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "name": "DRT 1.1 Bike",
+      "price": 499.00,
+      "weight": 32,
+      "wheelSize": 27.5,
+      "gears": 24,
+      "frame": "Co-op Cycles 6061 aluminum",
+      "description": "Made for off-road adventures, the Co-op Cycles DRT 1.1 features a versatile 3 x 8 drivetrain and the solid stopping power of hydraulic disc brakes, giving new riders the perfect amount of control. ",
+      "img": "drt-11-bike.jpg"
+    },
+    {
+      "name": "Cannondale Trail 7",
+      "price": 699.00,
+      "weight": 31,
+      "wheelSize": 29,
+      "gears": 18,
+      "frame": "Aluminum",
+      "description": "With a lightweight Trail frame you can handle confidently, reliable Shimano gearing and hydraulic disc brakes, the Cannondale Trail 7 is a great entry into the high-performance mountain biking world.",
+      "img": "cannondale.jpg"
+    },
+    {
+      "name": "Salsa Timberjack NX1",
+      "price": 1099.00,
+      "weight": 27,
+      "wheelSize": 27.5,
+      "gears": 11,
+      "frame": "6066-T6 and 6061 aluminum tube set",
+      "description": "The Salsa Timberjack NX1 27.5+ is a hardtail mountain bike that's equally at home pushing the limits on singletrack as it is bikepacking to places you've yet to discover.",
+      "img": "salsa.jpg"
+    },
+    {
+      "name": "GHOST Kato FS",
+      "price": 1999.00,
+      "weight": 31,
+      "wheelSize": 27.5,
+      "gears": 11,
+      "frame": "Aluminum",
+      "description": "Soak up the bumps with the 2018 GHOST Kato FS 3.7 27.5 bike, which supplies full-suspension fun for mountain biking adventures.",
+      "img": "ghost.jpg"
+    },
+    {
+      "name": "SLAMR X 9 LC 29er",
+      "price": 4398.73,
+      "weight": 30,
+      "wheelSize": 29,
+      "gears": 11,
+      "frame": "Carbon / alloy swing arm",
+      "description": "Blending speed, control, durability and agility for your trail adventures, the GHOST SLAMR X9 LC 29er bike boasts an ultralight carbon fiber frame, aluminum alloy swing arm and a burly suspension.",
+      "img": "slamr.png"
+    }
+  ]
+}

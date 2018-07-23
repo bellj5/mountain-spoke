@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This is the Mountain Spoke website.">
 
-  <script
-  			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   			  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <title>Bicycle Store - Repairs and Tours | The Mountain Spoke</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 </head>
 
 <body>
@@ -19,14 +23,18 @@
       <h1 class="mountain-header--title">The Mountain Spoke</h1>
     </header>
     <nav class="layout-main--nav mountain-nav" id="nav"></nav>
-    <main class="layout-main--content mountain-main">
-      <h1>Welcome!</h1>
-      <section class="layout-subgrid">
-
-      </section>
+    <main class="layout-main--content">
+      <h1>Services</h1>
+      <p>
+        We do all sorts of repairs and services on a variety of Bicycles. Our prices are the best
+        around, come in today and we will have your bike serviced and ready to get back on the road
+        in no time!
+      </p>
+      <section id="services-section"></section>
     </main>
     <footer class="layout-main--footer mountain-footer" id="footer"></footer>
   </div>
+  <script src="js/populateServices.js"></script>
   <script src="js/loadHTML.js"></script>
 </body>
 </html>

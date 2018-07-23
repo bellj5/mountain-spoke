@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "Name": "Flat tire",
+      "Price": "$10",
+      "Description": "Tire tube replacement or patching",
+      "Type": "repair"
+    },
+    {
+      "Name": "Chain repair",
+      "Price": "$15",
+      "Description": "Chain repair / replacement",
+      "Type": "repair"
+    },
+    {
+      "Name": "Broken spoke",
+      "Price": "$7 / spoke",
+      "Description": "Spoke replacement",
+      "Type": "repair"
+    },
+    {
+      "Name": "Air pressure check / filling",
+      "Price": "$5",
+      "Description": "Check tire pressure and fill if needed",
+      "Type": "tune-up"
+    },
+    {
+      "Name": "Securing bike bolts",
+      "Price": "$10 / hr",
+      "Description": "Checking bike bolts and tightening if needed",
+      "Type": "tune-up"
+    },
+    {
+      "Name": "Lubrication",
+      "Price": "$10 / hr",
+      "Description": "Full bike lubrication",
+      "Type": "tune-up"
+    },
+    {
+      "Name": "Full bike repair",
+      "Price": "$15 / hr + parts",
+      "Description": "Repair all damages and replace any damaged parts",
+      "Type": "repair"
+    },
+    {
+      "Name": "Full bike maintenance",
+      "Price": "$10 / hr",
+      "Description": "Check all bike parts and tune up any necessary parts",
+      "Type": "tune-up"
+    }
+  ]
+}

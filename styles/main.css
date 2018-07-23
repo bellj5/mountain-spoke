@@ -12,16 +12,6 @@ html, body {
 }
 
 /*****************************
- *       BASE
- *****************************/
-:root {
-  --color-primary: #0041aa;
-  --color-primary-light: #004fd1;
-  --color-secondary: #ff9030;
-}
-
-
-/*****************************
  *       LAYOUT
  *****************************/
 .layout-main {
@@ -95,8 +85,7 @@ html, body {
 
 .mountain-header {
   min-height: 400px;
-  background: url("https://bellj5.github.io/mountain-spoke/assets/bicycle-logo.jpg") no-repeat;
-  background-position: center;
+  background: url("https://bellj5.github.io/mountain-spoke/assets/bicycle-logo.jpg") no-repeat center;
   background-size: cover;
 
   display: flex;
@@ -104,9 +93,8 @@ html, body {
 }
 
 .mountain-header--title {
-  color: white;
   font-size: 5em;
-  color: var(--color-secondary);
+  color: #ff9030;
   margin: 20px;
 
   text-shadow:  -2px -2px 0 #000,
@@ -145,13 +133,13 @@ html, body {
 
 .mountain-nav--item {
   flex: 1;
-  background: var(--color-primary);
+  background: #0041aa;
   text-align: center;
   border-right: 2px solid black;
 }
 
 .mountain-nav--item:hover {
-  background: var(--color-primary-light);
+  background: #004fd1;
 }
 
 .mountain-nav--item:last-child {
@@ -206,7 +194,7 @@ ul.mountain-nav--show {
  *       FOOTER
  *****************************/
 .mountain-footer {
-  background: var(--color-secondary);
+  background: #ff9030;
   color: white;
   padding: 10px 20px;
 }
@@ -274,7 +262,7 @@ ul.mountain-nav--show {
 
 .mountain-table--heading {
   border: 1px solid black;
-  background: var(--color-primary-light);
+  background: #004fd1;
 }
 
 .mountain-table--cell {

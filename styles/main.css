@@ -104,6 +104,12 @@ html, body {
 }
 
 @media screen and (max-width: 992px) {
+  .mountain-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
   .mountain-header--title {
     font-size: 3em;
   }
